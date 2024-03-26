@@ -1,18 +1,24 @@
 #include <stdio.h>
 
 int main() {
-    int num, factorial;
+    int contador = 0;
     
-    printf("Ingrese un número para calcular su factorial: ");
-    scanf("%d", &num);
-    
-    factorial = 1;
-    while (num > 1) {
-        factorial *= num;
-        num--;
+    // Ejemplo de while
+    printf("Ejemplo de while:\n");
+    while (contador < 5) {
+        printf("El contador es: %d\n", contador);
+        contador++;
     }
     
-    printf("El factorial es: %d\n", factorial);
+    // Reiniciamos el contador para el siguiente ejemplo
+    contador = 0;
+    
+    // Ejemplo de do-while
+    printf("\nEjemplo de do-while:\n");
+    do {
+        printf("El contador es: %d\n", contador);
+        contador++;
+    } while (contador < 5);
     
     return 0;
 }
